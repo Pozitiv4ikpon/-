@@ -1,4 +1,3 @@
-
 from tkinter import *
 from random import *
 
@@ -10,6 +9,7 @@ def D():
     f+=1
     if f == 20:
       canvas.delete("all")
+      f = 0
     else:
       pass
     h = randint(1,3)
@@ -27,7 +27,7 @@ def D():
         B.config()
 
 root=Tk()
-root.title('Пр')
+root.title('Приложение')
 root.geometry('500x575')
 
 canvas = Canvas(root, width=500, height=500)
@@ -38,5 +38,3 @@ A.pack()
 
 B = Label(root)
 B.pack()
-
-root.mainloop()
